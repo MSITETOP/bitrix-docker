@@ -18,3 +18,8 @@ SSL настраивается автоматически при запуске 
 # Запуск
 
 `docker compose up -d`
+
+
+# Объединение частей бекапа для распаковки
+
+cat *$(ls -v  bs.view.ipg4you.com_20231001_075454_full.tar.*) > backup.tar.gz
